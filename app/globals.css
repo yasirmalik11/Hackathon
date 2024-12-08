@@ -1,0 +1,706 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* header css start */
+/* globals.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+header .logo h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+header .icons {
+  display: flex;
+  align-items: center;
+}
+
+header .icons a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* banner */
+/* Global Banner Styles */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00bcd4;
+  color: white;
+  padding: 20px;
+}
+
+
+.banner .content {
+  max-width: 50%;
+}
+
+.banner h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.banner .highlight {
+  color: yellow;
+  font-weight: bold;
+}
+
+.banner .shopNow {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.banner .shopNow:hover {
+  background-color: darkgreen;
+}
+
+.banner .image img {
+  max-width: 40%;
+}
+
+
+.banner1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(35, 133, 109);
+  color: white;
+  padding: 20px;
+}
+
+
+.banner1 .content {
+  max-width: 50%;
+}
+
+.banner1 h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.banner1 h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.banner1 p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.banner1 .highlight {
+  color: yellow;
+  font-weight: bold;
+}
+
+.banner1 .shopNow {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.banner1 .shopNow:hover {
+  background-color: darkgreen;
+}
+
+.banner1 .image img {
+  max-width: 40%;
+}
+.add
+{
+  display: flex;
+  gap: 2rem;
+}
+
+
+
+
+.banner2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(20, 20, 20);
+  padding: 20px;
+}
+
+.image {
+  flex: 1; /* Takes up half the space for the image */
+}
+
+.content {
+  flex: 1; /* Takes up the other half for the text content */
+  max-width: 50%;
+}
+
+.banner2 h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.banner2 h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.banner2 p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+}
+
+.banner2 .shopNow,
+.banner2 .learnMore {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.banner2 .shopNow {
+  background-color: #ff6f61; /* Customize as needed */
+}
+
+.banner2 .learnMore {
+  background-color: #4CAF50; /* Customize as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+.editorPick {
+  display: flex;
+  flex-direction: column;  /* Stack the items vertically */
+  align-items: center;     /* Horizontally center the items */
+  justify-content: center; /* Vertically center the items */
+  text-align: center;      /* Ensure text is centered inside each element */
+
+}
+
+.editorPick h3 {
+  font-size: 2rem;
+  margin-bottom: 10px; /* Space between h3 and p */
+}
+
+.editorPick p {
+  font-size: 1.2rem;
+  color: #555; /* Optional: Change color for better readability */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cards Section */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between; /* This ensures space between cards */
+}
+
+/* Card styles */
+.card {
+  width: 18rem;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.card-title {
+  color: #2A254B;
+}
+
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  color: #343a40;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-section form {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.footer-section input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.footer-section button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-section button:hover {
+  background-color: #0056b3;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+}
+
+
+
+/* Filter Bar Container */
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section (Results & View Options) */
+.filter-bar .left-section {
+  display: flex;
+  align-items: center;
+}
+
+.filter-bar .left-section span {
+  font-size: 14px;
+  color: #555;
+}
+
+.filter-bar .view-options {
+  display: flex;
+  margin-left: 20px;
+}
+
+.filter-bar .view-options button {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, border 0.3s ease;
+  margin-left: 10px;
+}
+
+.filter-bar .view-options button:hover {
+  background-color: #f0f0f0;
+  border-color: #bbb;
+}
+
+/* Right Section (Sort By & Filter) */
+.filter-bar .right-section {
+  display: flex;
+  align-items: center;
+}
+
+.filter-bar .right-section select,
+.filter-bar .right-section button {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.filter-bar .right-section select {
+  margin-right: 15px;
+}
+
+.filter-bar .right-section select:hover,
+.filter-bar .right-section button:hover {
+  background-color: #f0f0f0;
+  border-color: #bbb;
+}
+
+/* Styling for hover effects */
+.filter-bar .right-section select:focus,
+.filter-bar .right-section button:focus {
+  outline: none;
+  border-color: #007BFF;
+  background-color: #e6f2ff;
+}
+
+.filter-bar .right-section button {
+  font-weight: bold;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+}
+
+.filter-bar .right-section button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.split-container {
+  display: flex;
+  width: 100%;
+  height: 100vh; /* Adjusts the container to take up full height */
+}
+
+.content {
+  width: 50%; /* Takes up 50% of the container width */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+
+.content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.quote-container {
+  margin-top: 2rem; /* Space above the button */
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-button {
+  background-color: #007BFF; /* Blue background color */
+  color: white; /* White text color */
+  padding: 12px 30px; /* Vertical and horizontal padding */
+  font-size: 16px; /* Font size */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.quote-button:hover {
+  background-color: #0056b3; /* Darker blue when hovered */
+}
+
+.quote-button:focus {
+  outline: none; /* Removes the default focus outline */
+}
+
+.image {
+  width: 50%; /* Takes up 50% of the container width */
+  height: 100%; /* Ensures the image section takes up the full container height */
+  padding: 20px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .split-container {
+    flex-direction: column; /* Stacks content and image vertically */
+    height: auto; /* Adjusts height for stacked layout */
+  }
+
+  .content, .image {
+    width: 100%; /* Ensures both sections take up the full width */
+  }
+
+  .image img {
+    object-fit: contain; /* Prevents image distortion */
+  }
+}
+
+
+
+/* 50-50 split layout */
+.two-column-container {
+  display: flex;
+  width: 100%;
+ 
+}
+
+.left-column, .right-column {
+  width: 50%; /* Each child element takes up 50% of the parent container */
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding doesn't affect the width calculation */
+  font-weight: bold;
+}
+
+.left-column p, .right-column p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+ 
+}
+
+/* Optional: To center content vertically */
+.two-column-container .left-column,
+.two-column-container .right-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .two-column-container {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+  }
+
+  .left-column, .right-column {
+    width: 100%; /* Make each section take 100% width on small screens */
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;  /* Ensures the hero section spans the full width */
+  box-sizing: border-box; /* Includes padding within the width calculation */
+  background-color: #f5f5f5; /* Optional: adds a background color */
+}
+
+.hero-content {
+  flex: 1; /* Takes up available space */
+  padding-right: 20px; /* Optional: adds space between content and stats */
+}
+
+.hero-content h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1; /* Ensures it takes up remaining space */
+  max-width: 500px; /* Optional: you can set max width */
+  box-sizing: border-box; /* Keeps padding inside the element */
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stat p {
+  font-size: 14px;
+  color: #888;
+}
+
+.hug-count {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column; /* Stacks content and stats vertically */
+    padding: 10px;
+  }
+
+  .hero-content {
+    margin-bottom: 20px; /* Adds space between content and stats */
+  }
+
+  .stats-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stat {
+    margin-bottom: 10px; /* Adds space between individual stats */
+  }
+}
+
+
+
+.card-body1{
+  font-weight: bolder;
+  text-align: center;
+}.card-body2{
+font-weight: 100;
+margin-top: 1rem;
+}
